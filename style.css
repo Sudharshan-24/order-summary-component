@@ -1,0 +1,126 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--pale-blue);
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.card {
+    width: 450px;
+    background-color: white;
+    color: var(--desaturated-blue);
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+.hero-section {
+    padding: 30px;
+    margin: 13px 0;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    text-align: center;
+    font-size: 18px;
+}
+
+.hero-title {
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 32px;
+    /* text-align: center; */
+    /* margin: 13px 0; */
+}
+
+.hero-description {
+    line-height: 25px;
+    margin: 13px 0;
+}
+
+.price-plan {
+    font-size: 16px;
+    background-color: var(--very-pale-blue);
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plan-description {
+    margin-right: 110px;
+    line-height: 25px;
+}
+
+.annual-plan {
+    color: var(--dark-blue);
+}
+
+.change {
+    color: var(--bright-blue);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.change:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+button {
+    border: none;
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.proceed-button {
+    background-color: var(--bright-blue);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 20px 30px -8px rgb(197, 189, 245);
+    border-radius: 10px;
+}
+
+.proceed-button:hover {
+    opacity: 0.8;
+}
+
+.cancel-button {
+    margin-top: 28px;
+    background-color: transparent;
+    color: var(--desaturated-blue);
+}
+
+.cancel-button:hover {
+    color: var(--dark-blue);
+}
+
+.attribution {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
